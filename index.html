@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokenpo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="rotate.css" />
+  </head>
+  <body class="flex flex-col">
+    <main>
+      <header class="flex justify-between mb-4">
+        <h1 class="mb-1">PEDRA PAPEL TESOURA</h1>
+        <div
+          class="bg-dark rounded help text-center flex justify-center"
+          onclick="showElement('help__section')"
+        >
+          <h1 class="h-100">?</h1>
+        </div>
+      </header>
+
+      <section id="help__section" class="flex gap-4 mb-8 hidden">
+        <div>
+          <h3 class="mb-1">Como funciona?</h3>
+          <p class="max-w-300">
+            Um jogo de Pedra, Papel e Tesoura é um jogo simples onde o usuário
+            pode jogar contra o computador.
+            <br />
+            <br />
+            O objetivo do jogo é permitir que os jogadores escolham entre três
+            opções (pedra, papel ou tesoura) e, em seguida, determinar o
+            vencedor de acordo com as regras tradicionais.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="mb-1">Regras</h3>
+          <ul>
+            <li>Pedra ganha de tesoura</li>
+            <li>Papel ganha de pedra</li>
+            <li>Tesoura ganha de papel</li>
+            <li>Simbolos iguais são empate</li>
+          </ul>
+        </div>
+
+        <div class="container text-center rounded mb-1">
+          <header class="p-2">Fluxo</header>
+          <section class="flex justify-center items-center">
+            <img
+              class="hand"
+              src="./public/help.svg"
+              alt="Pedra papel ou tesoura"
+            />
+          </section>
+        </div>
+      </section>
+
+      <div class="flex justify-between mb-8">
+        <div>
+          <div class="container text-center rounded mb-1">
+            <header class="p-2">Sua escolha</header>
+            <section class="flex justify-center items-center">
+              <img
+                id="hand__choosen"
+                class="hand"
+                src="./public/papel.svg"
+                alt="Pedra papel ou tesoura"
+              />
+            </section>
+          </div>
+
+          <h3 id="hand__result" class="text-center hidden">Você ganhou</h3>
+        </div>
+
+        <div>
+          <div class="container text-center rounded mb-1">
+            <header class="p-2">Computador</header>
+            <section class="flex justify-center items-center">
+              <img
+                id="hand__computer"
+                class="hand"
+                src="./public/papel.svg"
+                alt="Pedra papel ou tesoura"
+              />
+            </section>
+          </div>
+
+          <h3 id="hand__result__pc" class="text-center hidden">
+            O computador ganhou
+          </h3>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-center">Faça sua escolha abaixo</h3>
+        <div>
+          <div class="flex gap-4 m-auto w-50 p-2 justify-center">
+            <div
+              class="help bg-dark choose-button flex justify-center items-center"
+              onclick="escolher('papel')"
+            >
+              <img src="/public/papel.svg" alt="Botão para escolher papel" />
+            </div>
+            <div
+              class="help bg-dark choose-button flex justify-center items-center"
+              onclick="escolher('pedra')"
+            >
+              <img src="/public/pedra.svg" alt="Botão para escolher pedra" />
+            </div>
+            <div
+              class="help bg-dark choose-button flex justify-center items-center"
+              onclick="escolher('tesoura')"
+            >
+              <img
+                src="/public/tesoura.svg"
+                alt="Botão para escolher tesoura"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-end">
+        <h3>Vitórias/Derrotas</h3>
+        <h1 id="score">0/0</h1>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: #8d3cff;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1280px;
+  width: 50vw;
+  margin: 4rem auto;
+  color: #fff;
+}
+
+.max-w-300 {
+  max-width: 300px;
+}
+
+button {
+  padding: 0.875rem 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: none;
+  border: none;
+  opacity: 0.85;
+  transition: 1s opacity;
+}
+
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 1s opacity;
+}
+
+.button-primary {
+  background: #1c7ed6;
+}
+
+.button-secundary {
+  background: #dc3545;
+}
+
+.text-blue {
+  color: #1c7ed6;
+}
+
+.text-red {
+  color: #dc3545;
+}
+
+.border-red {
+  border: 3px solid #dc3545;
+}
+
+.border-blue {
+  border: 3px solid #1c7ed6;
+}
+
+.background-gray {
+  background: #2e2e2e;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+p,
+span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 4rem;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.p-4 {
+  padding: 2rem;
+}
+
+.p-8 {
+  padding: 4rem;
+}
+
+.gap-4 {
+  gap: 2rem;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rounded {
+  border-radius: 1rem;
+}
+
+.sm-rounded {
+  border-radius: 0.25rem;
+}
+
+.bg-dark {
+  background: #2e2e2e;
+}
+
+.help {
+  width: 45px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.choose-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.help:hover {
+  cursor: pointer;
+}
+
+.container {
+  background: #2e2e2e;
+  width: 300px;
+}
+
+.container header {
+  background: #1e1e1e;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.container section {
+  height: 150px;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}

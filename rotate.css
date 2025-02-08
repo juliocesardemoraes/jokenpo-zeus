@@ -1,0 +1,23 @@
+.card__container {
+    transform-style: preserve-3d;
+    transition: 1s all;
+    height: 144px;
+}
+
+
+
+.card__front{
+    position: absolute;
+    width: 140px;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+.card__back{
+    position: absolute;
+    width: 140px;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
