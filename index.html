@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="rotate.css" />
+    <link rel="icon" type="image/svg+xml" href="./public/papel.png" />
   </head>
   <body class="flex flex-col">
     <main>
@@ -62,7 +63,21 @@
       </section>
 
       <div class="flex justify-between mb-8">
-        <div>
+        <div id="generating__result" class="hidden">
+          <div class="container text-center rounded mb-1">
+            <header class="p-2">Resultado em:</header>
+            <section class="flex justify-center items-center m-auto">
+              <img
+                id="hand__choosen__ref"
+                class="hand"
+                src="./public/papel.svg"
+                alt="Pedra papel ou tesoura"
+              />
+              <h1>3</h1>
+            </section>
+          </div>
+        </div>
+        <div id="user__screen">
           <div class="container text-center rounded mb-1">
             <header class="p-2">Sua escolha</header>
             <section class="flex justify-center items-center">
@@ -78,7 +93,7 @@
           <h3 id="hand__result" class="text-center hidden">Você ganhou</h3>
         </div>
 
-        <div>
+        <div id="pc__screen">
           <div class="container text-center rounded mb-1">
             <header class="p-2">Computador</header>
             <section class="flex justify-center items-center">
@@ -100,7 +115,10 @@
       <div class="mb-4">
         <h3 class="text-center">Faça sua escolha abaixo</h3>
         <div>
-          <div class="flex gap-4 m-auto w-50 p-2 justify-center">
+          <div
+            id="buttons__selector"
+            class="flex gap-4 m-auto w-50 p-2 justify-center"
+          >
             <div
               class="help bg-dark choose-button flex justify-center items-center"
               onclick="escolher('papel')"
